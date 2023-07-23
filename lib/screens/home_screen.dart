@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:movieapp/utils/text.dart';
 import 'package:tmdb_api/tmdb_api.dart';
+
+import '../widgets/trending.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -41,14 +44,27 @@ class _HomeScreenState extends State<HomeScreen> {
     print(trendingmovies);
     print(topratedmovies);
     print(tv);
-
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("Welcome to MOVIE APP"),
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        centerTitle: true,
+        title: CustomText(
+          text: 'Flutter Movie App ❤️',
+          color: Colors.white,
+          size: 20,
+        ),
+        backgroundColor: Colors.transparent,
+      ),
+      body: ListView(
+        children: [
+          TrendingMovies(
+            trending: trendingmovies,
+          ),
+        ],
       ),
     );
   }
