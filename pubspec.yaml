@@ -36,6 +36,8 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.1.12
+  tmdb_api:
+  google_fonts:
 
 dev_dependencies:
   flutter_lints: ^2.0.0

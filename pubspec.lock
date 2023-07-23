@@ -73,6 +73,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.1"
+  colorize:
+    dependency: transitive
+    description:
+      name: colorize
+      sha256: "584746cd6ba1cba0633b6720f494fe6f9601c4170f0666c1579d2aa2a61071ba"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
   crypto:
     dependency: transitive
     description:
@@ -168,6 +176,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  google_fonts:
+    dependency: "direct main"
+    description:
+      name: google_fonts
+      sha256: e20ff62b158b96f392bfc8afe29dee1503c94fbea2cbe8186fd59b756b8ae982
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.0"
   http:
     dependency: transitive
     description:
@@ -389,6 +405,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.1"
+  tmdb_api:
+    dependency: "direct main"
+    description:
+      name: tmdb_api
+      sha256: "31f6ff1bc361ccabf5b5ccc52542e5f9b8db61dcebb74712f9ca8a77dadc7d57"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.5"
   typed_data:
     dependency: transitive
     description:
