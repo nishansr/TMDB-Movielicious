@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movieapp/utils/text.dart';
+import 'package:movieapp/widgets/toprated.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
 import '../widgets/trending.dart';
@@ -40,10 +41,8 @@ class _HomeScreenState extends State<HomeScreen> {
       trendingmovies = trendingresult['results'];
       topratedmovies = topratedresult['results'];
       tv = tvresult['results'];
+      print(trendingmovies);
     });
-    print(trendingmovies);
-    print(topratedmovies);
-    print(tv);
   }
 
   @override
@@ -53,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: CustomText(
-          text: 'Flutter Movie App ❤️',
+          text: 'Flutter Movie App',
           color: Colors.white,
           size: 20,
         ),
@@ -61,9 +60,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: ListView(
         children: [
-          TrendingMovies(
-            trending: trendingmovies,
-          ),
+          TopRated(toprated: topratedmovies),
+          TrendingMovies(trending: trendingmovies),
         ],
       ),
     );
