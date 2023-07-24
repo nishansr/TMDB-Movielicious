@@ -93,7 +93,7 @@ What's in **view**
 
 ## :clap: Done
 
-Feel free to **file a new issue** with a respective title and description on the [TMDB Movie App](https://github.com/nishansr/TMDB-Movielicious/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
+Feel free to **file a new issue** with a respective title and description on the [TMDB Movilicious](https://github.com/nishansr/TMDB-Movielicious/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
 
 ## 📘&nbsp; License
 
@@ -101,4 +101,4 @@ The TMDB app is released under the under terms of the [MIT License](LICENSE).
 
 ## :heart: Contributor
 
-Made by [Tekeshwar Singh](https://github.com/nishansr)
+Made by [Nishan Bishwokarma](https://github.com/nishansr)
