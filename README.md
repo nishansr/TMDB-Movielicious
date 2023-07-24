@@ -26,7 +26,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [F
 $ git clone https://github.com/nishansr/TMDB-Movielicious.git
 
 # Go into the repository
-$ cd TMDB-movie-app
+$ cd TMDB-Movielicious
 
 # Install dependencies
 $ flutter pub get
