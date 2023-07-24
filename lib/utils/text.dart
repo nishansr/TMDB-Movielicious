@@ -12,6 +12,7 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: TextAlign.center,
       style: GoogleFonts.breeSerif(
         color: color,
         fontSize: size,

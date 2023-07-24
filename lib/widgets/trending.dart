@@ -45,7 +45,7 @@ class TrendingMovies extends StatelessWidget {
                                   size: 15,
                                   text: trending[index]['title'] != null
                                       ? trending[index]['title']
-                                      : 'Loading'),
+                                      : trending[index]['name']),
                             )
                           ],
                         ),

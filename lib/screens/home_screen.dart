@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movieapp/utils/text.dart';
 import 'package:movieapp/widgets/toprated.dart';
+import 'package:movieapp/widgets/tv.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
 import '../widgets/trending.dart';
@@ -41,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
       trendingmovies = trendingresult['results'];
       topratedmovies = topratedresult['results'];
       tv = tvresult['results'];
-      print(trendingmovies);
+      print(tv);
     });
   }
 
@@ -62,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           TopRated(toprated: topratedmovies),
           TrendingMovies(trending: trendingmovies),
+          TV(tv: tv),
         ],
       ),
     );
