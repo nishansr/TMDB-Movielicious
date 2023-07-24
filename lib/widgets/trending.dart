@@ -24,6 +24,22 @@ class TrendingMovies extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return InkWell(
                       onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: ((context) => Description(
+                                name: trending[index]['title'] != null
+                                    ? trending[index]['title']
+                                    : trending[index]['name'],
+                                description: trending[index]['overview'],
+                                bannerurl: 'https://image.tmdb.org/t/p/w500' +
+                                    trending[index]['backdrop_path'],
+                                posterurl: 'https://image.tmdb.org/t/p/w500' +
+                                    trending[index]['poster_path'],
+                                vote:
+                                    trending[index]['vote_average'].toString(),
+                                launch_on: trending[index]['first_air_date']
+                                    .toString(),
+                              )),
+                        ));
                       },
                       child: Container(
                         width: 140,

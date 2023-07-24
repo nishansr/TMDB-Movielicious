@@ -34,22 +34,26 @@ class Description extends StatelessWidget {
                         child: Image.network(bannerurl, fit: BoxFit.cover)),
                   )),
                   Positioned(
-                    bottom: 2,
-                    child: CustomText(
-                        text: 'Average Rating - ' + vote,
-                        color: Colors.white,
-                        size: 10),
-                  )
+                    left: 20,
+                    bottom: 25,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CustomText(
+                            text: 'Average Rating - ' + vote,
+                            color: Colors.white,
+                            size: 15),
+                        Container(
+                          child: CustomText(
+                              text: name != null ? name : 'Loading',
+                              color: Colors.white,
+                              size: 25),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
-            ),
-            SizedBox(height: 15.0),
-            Container(
-              padding: EdgeInsets.all(10.0),
-              child: CustomText(
-                  text: name != null ? name : 'Loading',
-                  color: Colors.white,
-                  size: 20),
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
