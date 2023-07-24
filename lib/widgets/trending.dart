@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movieapp/utils/description.dart';
 import 'package:movieapp/utils/text.dart';
 
 class TrendingMovies extends StatelessWidget {
@@ -41,7 +42,7 @@ class TrendingMovies extends StatelessWidget {
                             SizedBox(height: 5),
                             Container(
                               child: CustomText(
-                                color: Colors.white,
+                                  color: Colors.white,
                                   size: 15,
                                   text: trending[index]['title'] != null
                                       ? trending[index]['title']

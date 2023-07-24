@@ -61,9 +61,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: ListView(
         children: [
+          TV(tv: tv),
           TopRated(toprated: topratedmovies),
           TrendingMovies(trending: trendingmovies),
-          TV(tv: tv),
         ],
       ),
     );
